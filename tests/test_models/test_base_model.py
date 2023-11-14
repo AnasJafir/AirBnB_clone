@@ -22,15 +22,15 @@ class TestBaseModel(unittest.TestCase):
 
     def test_save(self):
         """
-        Save method test case
+        Test for save method
         """
         _model = BaseModel()
 
-        prev_updated_at = _model.updated_at
+        initial_updated_at = _model.updated_at
 
-        curr_updated_at = _model.save()
+        current_updated_at = _model.save()
 
-        self.assertNotEqual(prev_updated_at, curr_updated_at)
+        self.assertNotEqual(initial_updated_at, current_updated_at)
 
     def test_to_dict(self):
         """
