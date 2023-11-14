@@ -24,7 +24,6 @@ class TestBasemodel(unittest.TestCase):
     def test_save(self):
         """
         Test for the save method.
-    
         Checks if the save method updates the 'updated_at' attribute.
         """
         _model = BaseModel()
@@ -47,7 +46,9 @@ class TestBasemodel(unittest.TestCase):
         self.assertEqual(_mdl_dict["__class__"], 'BaseModel')
         self.assertEqual(_mdl_dict['id'], _mdl.id)
         self.assertEqual(_mdl_dict['created_at'], _mdl.created_at.isoformat())
-        self.assertTrue(_mdl_dict['updated_at'].startswith(_mdl.updated_at.isoformat()))
+        self.assertTrue(
+                _mdl_dict['updated_at'].startswith(_mdl.updated_at.isoformat())
+                )
 
     def test_str(self):
         """
