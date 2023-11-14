@@ -13,13 +13,16 @@ from models.city import City
 from models.place import Place
 from models.amenity import Amenity
 
+
 class HBNBCommand(cmd.Cmd):
     """
     HBNB command interpreter class
     """
     prompt = "(hbnb) "
-    classes = ["BaseModeli", "User", "Amenity", "City",
-            "Place", "Review", "State"]
+    classes = [
+            "BaseModel", "User", "Amenity", "City",
+            "Place", "Review", "State"
+            ]
 
     def do_quit(self, line):
         """
