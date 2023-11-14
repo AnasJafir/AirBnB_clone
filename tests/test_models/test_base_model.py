@@ -31,7 +31,7 @@ class TestBasemodel(unittest.TestCase):
 
         initial_updated_at = _model.updated_at
 
-        _model.sqve()
+        _model.save()
 
         current_updated_at = _model.updated_at
 
