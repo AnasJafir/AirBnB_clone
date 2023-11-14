@@ -27,12 +27,9 @@ class TestBasemodel(unittest.TestCase):
         Checks if the save method updates the 'updated_at' attribute.
         """
         _model = BaseModel()
-
         initial_updated_at = _model.updated_at
-
-
-        current_updated_at = _model.save()
-
+        _model.save()
+        current_updated_at = _model.updated_at
         self.assertNotEqual(initial_updated_at, current_updated_at)
 
     def test_to_dict(self):
