@@ -11,7 +11,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsNotNone(_model.id)
         self.assertIsNotNone(_model.created_at)
         self.assertIsNotNone(_model.updated_at)
-    def test_sqve(self):
+    def test_save(self):
         _model = BaseModel()
         prev_updated_at = _model.updated_at
         curr_updated_at = _model.save()
