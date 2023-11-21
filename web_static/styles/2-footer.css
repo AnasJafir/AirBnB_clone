@@ -7,7 +7,7 @@ footer {
     display: grid;
     place-content: center;
 }
-p {
+.Best {
     margin: 0;
     text-align: center;
     color: black;
