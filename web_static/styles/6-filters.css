@@ -46,7 +46,7 @@ button:hover {
 
 .locations h3 , .amenities h3 {
     font-weight: 600;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 0;
     margin: 0;
 }
@@ -65,6 +65,8 @@ button:hover {
     top: 80%;
     list-style: none;
     padding-bottom: 30px;
+    top: calc(100% + 0);
+    z-index: 1000;
 }
 
 .locations:hover .popover, .amenities:hover .popover {
@@ -84,15 +86,22 @@ h2 {
 
 .locations li {
     color: black;
-    text-indent: 20px;
     padding-top: 5px;
+    list-style: none;
 }
 .amenities li {
     color: black;
-    text-indent: 27px;
     padding-top: 5px;
 }
 
 .amenities .popover {
     padding-top: 30px;
+}
+
+.places h1 {
+    text-indent: 25px;
+}
+
+.city1 , .city2 , .city3 , .city4 {
+    text-indent: 25px;
 }

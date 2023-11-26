@@ -1,4 +1,15 @@
-footer {
+.relative_footer {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    border-top: 1px solid #CCCCCC;
+}
+
+.absolute_footer {
     background-color: white;
     height: 60px;
     width: 100%;
@@ -8,7 +19,8 @@ footer {
     place-content: center;
     border-top: 1px solid #CCCCCC;
 }
-.Best {
+
+.relative_footer .Best , .absolute_footer .Best {
     margin: 0;
     text-align: center;
     color: black;
